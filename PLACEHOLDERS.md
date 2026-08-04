@@ -4,22 +4,22 @@ Search each file for the `.placeholder` CSS class / `[BRACKETED TEXT]` to find e
 
 ## Business info
 - [x] Phone number - (812) 373-6183
-- [ ] Email address - currently `mailto:placeholder@example.com`
-- [ ] Hours of operation
-- [ ] Base town/city + service radius
-- [ ] List of towns/counties covered (index.html service area section)
+- [x] Email address - sightlinedrone@outlook.com
+- [x] Hours of operation - 7am - 10pm
+- [x] Base town/city + service radius - Cross Plains, IN, 30-mile radius (+$1/mile beyond)
+- [x] List of towns/counties covered - dropped; site just leads with base city + radius instead
 
 ## Credentials
-- [ ] RPAS registration number (shown in the footer on every page)
+- [x] Footer credential line - "Holds FAA Part 107" (no separate registration number given)
 
 ## Pricing (services.html)
-- [ ] Deer/game recovery price
-- [ ] Lost pet search price
-- [ ] Livestock location price
-- [ ] Aerial add-on pricing
+- [x] Deer/game recovery price - $250 per call-out + $100 bonus if found
+- [x] Lost pet search price - $150 per search + $100 bonus if found
+- [x] Livestock location price - $150 per flight + $100 bonus if found
+- [x] Aerial add-on pricing - $300 starting at, per project (covers mapping, inspection, and real estate)
 
 ## Legal - verify before publishing
-- [ ] Confirm drone-assisted game recovery is legal in your province - rules on aircraft use tied to hunting vary and some jurisdictions restrict it even post-kill
+- [x] Game recovery legal note removed from services.html per owner confirmation
 - [ ] Confirm night-flight compliance (Advanced RPAS cert + lighting) if you're advertising overnight searches
 
 ## Content

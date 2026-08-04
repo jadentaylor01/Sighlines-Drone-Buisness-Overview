@@ -541,6 +541,13 @@ p.placeholder {
   font-size: 0.85rem;
 }
 
+.price-bonus {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: -12px 0 20px;
+}
+
 /* ---------- Contact page ---------- */
 
 .contact-grid {
