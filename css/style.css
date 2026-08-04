@@ -587,7 +587,11 @@ p.placeholder {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-dim);
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+}
+
+.info-card h3:not(:first-child) {
+  margin-top: 20px;
 }
 
 .info-card p {
