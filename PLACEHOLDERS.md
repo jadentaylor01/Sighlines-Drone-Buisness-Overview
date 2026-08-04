@@ -3,7 +3,7 @@
 Search each file for the `.placeholder` CSS class / `[BRACKETED TEXT]` to find every spot below.
 
 ## Business info
-- [ ] Phone number - currently `tel:+10000000000` in every page header, hero, footer, and mobile call bar
+- [x] Phone number - (812) 373-6183
 - [ ] Email address - currently `mailto:placeholder@example.com`
 - [ ] Hours of operation
 - [ ] Base town/city + service radius
