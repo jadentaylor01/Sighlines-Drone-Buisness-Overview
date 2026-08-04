@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Sightline Drone Solutions</title>
+<meta name="description" content="Call now for urgent recovery requests, or submit a search request with details on your situation.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="img/sightline-drone-solutions-icon-square.svg" alt="Sightline Drone Solutions" class="brand-icon">
+      <span class="brand-text">
+        <span class="brand-primary">Sightline</span>
+        <span class="brand-secondary">Drone Solutions</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Our Services</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+10000000000" class="header-call">
+        &#128222; <span class="call-label placeholder">[PHONE NUMBER]</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PAGE HEADER ===================== -->
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Contact Us</span>
+    <h1>Get in touch</h1>
+    <p class="lead">Urgent situation? Call. Otherwise, the form below gets us everything we need to plan a search.</p>
+  </div>
+</section>
+
+<!-- ===================== CONTACT GRID ===================== -->
+<section>
+  <div class="container contact-grid">
+
+    <!-- Left column: call + info -->
+    <div>
+      <div class="call-card">
+        <span class="eyebrow">Urgent? Call now</span>
+        <span class="phone-number placeholder">[PHONE NUMBER]</span>
+        <a href="tel:+10000000000" class="btn btn-primary btn-block">Call Now</a>
+      </div>
+
+      <div class="info-card">
+        <h3>Hours</h3>
+        <p class="placeholder">[HOURS OF OPERATION, e.g. 7am&ndash;11pm daily, after-hours for pet emergencies]</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Service Area</h3>
+        <p class="placeholder">[TOWNS / COUNTY / RADIUS]</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Email</h3>
+        <p><a href="mailto:placeholder@example.com" class="placeholder">[EMAIL ADDRESS]</a></p>
+      </div>
+
+      <div class="info-card">
+        <h3>Response Time</h3>
+        <p class="placeholder">[e.g. Most flights launch within 30 minutes of dispatch]</p>
+      </div>
+    </div>
+
+    <!-- Right column: intake form -->
+    <div>
+      <form class="intake" id="intake-form">
+        <!--
+          PLACEHOLDER: this form has no backend yet. Wire it to a form
+          service (Formspree, Netlify Forms, Web3Forms) or your own
+          endpoint by setting the action/method below and removing the
+          demo JS handler in js/main.js.
+        -->
+        <h3 style="margin-bottom: 6px;">Request a Search</h3>
+        <p style="margin-bottom: 24px;">Fill in as much as you can - more detail means a faster, more accurate flight.</p>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name" class="field-required">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="phone" class="field-required">Phone number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="service" class="field-required">Service needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select one&hellip;</option>
+            <option value="deer">Deer / game recovery</option>
+            <option value="pet">Lost pet search</option>
+            <option value="livestock">Livestock location</option>
+            <option value="aerial">Aerial add-on (mapping, inspection, photo/video)</option>
+            <option value="other">Not sure</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="location" class="field-required">Location / address / coordinates</label>
+          <input type="text" id="location" name="location" placeholder="Address, nearest crossroad, or GPS pin" required>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="last-seen">Time last seen / shot</label>
+            <input type="datetime-local" id="last-seen" name="last-seen">
+          </div>
+          <div class="field">
+            <label for="animal">Animal description</label>
+            <input type="text" id="animal" name="animal" placeholder="Species, size, color, tag/collar">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="terrain">Terrain details</label>
+          <textarea id="terrain" name="terrain" placeholder="Open field, treeline, ditch, water crossing, fencing, access points, etc."></textarea>
+          <div class="hint">The more detail here, the faster we can plan the flight path.</div>
+        </div>
+
+        <div class="field">
+          <label for="photo">Photo (optional)</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+          <div class="hint placeholder">[Requires a backend/file upload service to actually receive files]</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+
+        <p class="form-note">For time-critical situations, calling is faster than waiting on a form response.</p>
+
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <img src="img/sightline-drone-solutions-icon-square.svg" alt="Sightline Drone Solutions" class="brand-icon">
+          <span class="brand-text">
+            <span class="brand-primary">Sightline</span>
+            <span class="brand-secondary">Drone Solutions</span>
+          </span>
+        </a>
+        <p>Thermal drone recovery for deer, pets, and livestock. Serving <span class="placeholder">[SERVICE AREA]</span>.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+10000000000" class="placeholder">[PHONE NUMBER]</a></li>
+          <li><a href="mailto:placeholder@example.com" class="placeholder">[EMAIL ADDRESS]</a></li>
+          <li class="placeholder">[HOURS OF OPERATION]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Sightline Drone Solutions. All rights reserved.</span>
+      <span class="placeholder">[RPAS CERT / REGISTRATION #]</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+10000000000">&#128222; Call Now</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Sightline Drone Solutions logo — orange horizon sun version</title>
+  <desc id="desc">An enlarged Sightline Drone Solutions wordmark with a connected-rotor drone flying above an orange sun on the green horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#88C9F2"/>
+      <stop offset="1" stop-color="#EAF8FD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Blue sky above a green rolling horizon; orange sun sits at the drone's lower right. -->
+  <rect width="1800" height="600" fill="url(#sky)"/>
+  <circle cx="1485" cy="350" r="114" fill="#F58220" opacity=".88"/>
+  <path d="M0 351C186 329 326 337 505 361 704 388 862 340 1042 350 1247 361 1357 326 1533 344 1642 355 1723 348 1800 337V600H0Z" fill="#4D945D"/>
+  <path d="M0 432C230 401 429 454 637 430 849 406 1019 441 1224 422 1436 403 1608 436 1800 415V600H0Z" fill="#3E7C4D" opacity=".78"/>
+  <path d="M0 351C186 329 326 337 505 361 704 388 862 340 1042 350 1247 361 1357 326 1533 344 1642 355 1723 348 1800 337" fill="none" stroke="#2D6B43" stroke-width="5"/>
+
+  <!-- Drone: arms and propellers use one continuous stroke system, with no hub bumps. -->
+  <g transform="translate(1205 62) rotate(-8 200 142)" fill="none" stroke="#0A233C" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="24">
+      <path d="M174 119 78 62H25M78 62H131M228 119 324 62H271M324 62H377"/>
+      <path d="M174 165 78 222H25M78 222H131M228 165 324 222H271M324 222H377"/>
+    </g>
+    <path d="M201 91C237 91 263 115 263 142 263 170 237 193 201 193 165 193 139 170 139 142 139 115 165 91 201 91Z" fill="#0A233C" stroke="none"/>
+    <circle cx="201" cy="142" r="27" fill="#F4E6C8" stroke="none"/>
+    <circle cx="201" cy="142" r="8" fill="#0A233C" stroke="none"/>
+    <path d="M174 212H228" stroke-width="10"/>
+  </g>
+
+  <!-- Enlarged wordmark, separated by the horizon. -->
+  <text x="285" y="333" fill="#0A233C" font-family="Aptos, Arial, Helvetica, sans-serif" font-size="180" font-weight="700" letter-spacing="-7">SIGHTLINE</text>
+  <text x="293" y="428" fill="#F8FCF8" font-family="Aptos, Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="16">DRONE SOLUTIONS</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101d26"/>
+      <stop offset="38%" stop-color="#1f3336"/>
+      <stop offset="72%" stop-color="#33452f"/>
+      <stop offset="100%" stop-color="#425c37"/>
+    </linearGradient>
+
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c878" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#b8934f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b8934f" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4f6a3c"/>
+      <stop offset="100%" stop-color="#3c5430"/>
+    </linearGradient>
+
+    <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e3f22"/>
+      <stop offset="100%" stop-color="#212f18"/>
+    </linearGradient>
+
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2414"/>
+      <stop offset="100%" stop-color="#131c10"/>
+    </linearGradient>
+
+    <filter id="soften" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- low sun glow -->
+  <circle cx="1180" cy="560" r="260" fill="url(#sun)"/>
+  <circle cx="1180" cy="560" r="46" fill="#e8c878" opacity="0.7" filter="url(#soften)"/>
+
+  <!-- far hills -->
+  <path d="M0,620 C180,560 340,600 520,570 C700,540 860,600 1040,580 C1220,560 1380,610 1600,580 L1600,900 L0,900 Z" fill="url(#hillFar)" opacity="0.85"/>
+
+  <!-- mid hills -->
+  <path d="M0,700 C220,650 380,690 560,660 C760,630 940,690 1140,665 C1320,645 1460,690 1600,665 L1600,900 L0,900 Z" fill="url(#hillMid)"/>
+
+  <!-- treeline (pines), mid layer -->
+  <g fill="#1e2a17" opacity="0.9">
+    <path d="M120,700 L140,650 L160,700 Z"/>
+    <path d="M150,705 L172,648 L194,705 Z"/>
+    <path d="M300,712 L322,655 L344,712 Z"/>
+    <path d="M330,715 L354,652 L378,715 Z"/>
+    <path d="M600,708 L620,658 L640,708 Z"/>
+    <path d="M628,712 L650,656 L672,712 Z"/>
+    <path d="M900,715 L922,660 L944,715 Z"/>
+    <path d="M930,718 L954,658 L978,718 Z"/>
+    <path d="M1350,710 L1372,655 L1394,710 Z"/>
+    <path d="M1380,714 L1404,652 L1428,714 Z"/>
+  </g>
+
+  <!-- near hills / ground -->
+  <path d="M0,760 C260,800 460,750 700,780 C920,806 1160,760 1400,790 C1480,798 1550,790 1600,782 L1600,900 L0,900 Z" fill="url(#hillNear)"/>
+
+  <!-- near treeline, dense, bottom band -->
+  <g fill="#121a0f">
+    <path d="M-20,800 L20,720 L60,800 Z"/>
+    <path d="M40,806 L84,715 L128,806 Z"/>
+    <path d="M110,800 L150,725 L190,800 Z"/>
+    <path d="M480,808 L524,718 L568,808 Z"/>
+    <path d="M540,802 L580,728 L620,802 Z"/>
+    <path d="M1050,806 L1094,716 L1138,806 Z"/>
+    <path d="M1110,800 L1150,726 L1190,800 Z"/>
+    <path d="M1480,804 L1524,714 L1568,804 Z"/>
+    <path d="M1540,810 L1584,720 L1628,810 Z"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="800" width="1600" height="100" fill="#111a0e"/>
+
+  <!-- drone silhouette, upper-right of frame -->
+  <g transform="translate(980,300) scale(1.15)" fill="#12140f" opacity="0.92">
+    <!-- rotor arms -->
+    <line x1="-70" y1="-40" x2="70" y2="40" stroke="#12140f" stroke-width="6"/>
+    <line x1="70" y1="-40" x2="-70" y2="40" stroke="#12140f" stroke-width="6"/>
+    <!-- body -->
+    <rect x="-24" y="-14" width="48" height="28" rx="6"/>
+    <!-- rotors -->
+    <circle cx="-70" cy="-40" r="20" fill="none" stroke="#12140f" stroke-width="4" opacity="0.8"/>
+    <circle cx="70" cy="-40" r="20" fill="none" stroke="#12140f" stroke-width="4" opacity="0.8"/>
+    <circle cx="-70" cy="40" r="20" fill="none" stroke="#12140f" stroke-width="4" opacity="0.8"/>
+    <circle cx="70" cy="40" r="20" fill="none" stroke="#12140f" stroke-width="4" opacity="0.8"/>
+    <!-- thermal sensor glow underneath -->
+    <circle cx="0" cy="18" r="7" fill="#e8c878" opacity="0.6" filter="url(#soften)"/>
+  </g>
+
+  <!-- faint scan beam from drone to ground, subtle -->
+  <polygon points="980,320 890,760 1080,760" fill="#e8c878" opacity="0.05"/>
+</svg>
