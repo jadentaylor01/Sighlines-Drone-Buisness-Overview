@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Sightline Drone Solutions centered icon</title>
+  <desc id="desc">A centered connected-rotor drone flying in front of a warm sun over a green horizon and blue sky, on a rounded square.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#72BDEA"/>
+      <stop offset="1" stop-color="#EAF8FD"/>
+    </linearGradient>
+    <clipPath id="roundedSquare">
+      <rect width="1000" height="1000" rx="180" ry="180"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#roundedSquare)">
+    <rect width="1000" height="1000" fill="url(#sky)"/>
+    <circle cx="674" cy="498" r="202" fill="#F9D86C"/>
+    <path d="M0 623C120 588 258 601 376 632 502 665 633 605 747 615 854 624 927 608 1000 586V1000H0Z" fill="#4D945D"/>
+    <path d="M0 739C126 704 243 756 370 730 526 698 618 748 747 720 852 697 935 723 1000 712V1000H0Z" fill="#3E7C4D" opacity=".8"/>
+    <path d="M0 623C120 588 258 601 376 632 502 665 633 605 747 615 854 624 927 608 1000 586" fill="none" stroke="#2D6B43" stroke-width="8"/>
+
+    <!-- Centered at x=500; the arm/propeller lines remain smooth and uninterrupted. -->
+    <g transform="translate(200 92) rotate(-8 300 250)" fill="none" stroke="#0A233C" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke-width="31">
+        <path d="M270 217 150 130H55M150 130H245M330 217 450 130H355M450 130H545"/>
+        <path d="M270 283 150 370H55M150 370H245M330 283 450 370H355M450 370H545"/>
+      </g>
+      <path d="M300 180C347 180 380 211 380 250 380 289 347 320 300 320 253 320 220 289 220 250 220 211 253 180 300 180Z" fill="#0A233C" stroke="none"/>
+      <circle cx="300" cy="250" r="37" fill="#F7B733" stroke="none"/>
+      <circle cx="300" cy="250" r="11" fill="#0A233C" stroke="none"/>
+      <path d="M260 345H340" stroke-width="13"/>
+    </g>
+  </g>
+</svg>
