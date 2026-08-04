@@ -96,7 +96,7 @@ p { margin: 0 0 16px; color: var(--text-dim); }
 }
 
 .section-head {
-  max-width: 640px;
+  max-width: 1280px;
   margin-bottom: 40px;
 }
 
