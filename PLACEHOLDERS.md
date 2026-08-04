@@ -28,5 +28,4 @@ Search each file for the `.placeholder` CSS class / `[BRACKETED TEXT]` to find e
 - [ ] Reviews - homepage has an empty "reviews slot" ready for real testimonials; don't fill with fake ones
 
 ## Functionality
-- [ ] Contact form has no backend - `js/main.js` just shows a demo message on submit. Wire it to Formspree, Netlify Forms, Web3Forms, or a custom endpoint.
-- [ ] File upload field in the form won't actually receive files without a backend.
+- [x] Contact page no longer uses a form - it outlines what to include and links to a `mailto:` for sightlinedrone@outlook.com instead.

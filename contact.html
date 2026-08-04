@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | Sightline Drone Solutions</title>
-<meta name="description" content="Call now for urgent recovery requests, or submit a search request with details on your situation.">
+<meta name="description" content="Call now for urgent recovery requests, or email us the details of your situation.">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/svg+xml" href="img/sightline-drone-solutions-icon-rounded.svg">
 </head>
@@ -43,7 +43,7 @@
   <div class="container">
     <span class="eyebrow">Contact Us</span>
     <h1>Get in touch</h1>
-    <p class="lead">Urgent situation? Call. Otherwise, the form below gets us everything we need to plan a search.</p>
+    <p class="lead">Urgent situation? Call. Otherwise, send an email with the details below and we'll get back to you.</p>
   </div>
 </section>
 
@@ -75,75 +75,26 @@
       </div>
     </div>
 
-    <!-- Right column: intake form -->
+    <!-- Right column: email outline -->
     <div>
-      <form class="intake" id="intake-form">
-        <!--
-          PLACEHOLDER: this form has no backend yet. Wire it to a form
-          service (Formspree, Netlify Forms, Web3Forms) or your own
-          endpoint by setting the action/method below and removing the
-          demo JS handler in js/main.js.
-        -->
-        <h3 style="margin-bottom: 6px;">Request a Search</h3>
-        <p style="margin-bottom: 24px;">Fill in as much as you can - more detail means a faster, more accurate flight.</p>
+      <div class="email-card">
+        <h3 style="margin-bottom: 6px;">Email us a search request</h3>
+        <p style="margin-bottom: 24px;">Include as much of the following as you can - more detail means a faster, more accurate flight.</p>
 
-        <div class="form-row">
-          <div class="field">
-            <label for="name" class="field-required">Full name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="field">
-            <label for="phone" class="field-required">Phone number</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-        </div>
+        <ul class="fact-list">
+          <li>Full name and phone number</li>
+          <li>Service needed - deer/game recovery, lost pet search, livestock location, or aerial add-on</li>
+          <li>Location - address, nearest crossroad, or GPS coordinates</li>
+          <li>Time the animal was last seen or shot, if applicable</li>
+          <li>Animal description - species, size, color, tag/collar</li>
+          <li>Terrain details - open field, treeline, ditch, water crossing, fencing, access points, etc.</li>
+          <li>A photo, if you have one - just attach it to the email</li>
+        </ul>
 
-        <div class="field">
-          <label for="service" class="field-required">Service needed</label>
-          <select id="service" name="service" required>
-            <option value="" disabled selected>Select one&hellip;</option>
-            <option value="deer">Deer / game recovery</option>
-            <option value="pet">Lost pet search</option>
-            <option value="livestock">Livestock location</option>
-            <option value="aerial">Aerial add-on (mapping, inspection, photo/video)</option>
-            <option value="other">Not sure</option>
-          </select>
-        </div>
+        <a href="mailto:sightlinedrone@outlook.com?subject=Search%20Request" class="btn btn-primary btn-block">Email sightlinedrone@outlook.com</a>
 
-        <div class="field">
-          <label for="location" class="field-required">Location / address / coordinates</label>
-          <input type="text" id="location" name="location" placeholder="Address, nearest crossroad, or GPS pin" required>
-        </div>
-
-        <div class="form-row">
-          <div class="field">
-            <label for="last-seen">Time last seen / shot</label>
-            <input type="datetime-local" id="last-seen" name="last-seen">
-          </div>
-          <div class="field">
-            <label for="animal">Animal description</label>
-            <input type="text" id="animal" name="animal" placeholder="Species, size, color, tag/collar">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="terrain">Terrain details</label>
-          <textarea id="terrain" name="terrain" placeholder="Open field, treeline, ditch, water crossing, fencing, access points, etc."></textarea>
-          <div class="hint">The more detail here, the faster we can plan the flight path.</div>
-        </div>
-
-        <div class="field">
-          <label for="photo">Photo (optional)</label>
-          <input type="file" id="photo" name="photo" accept="image/*">
-          <div class="hint placeholder">[Requires a backend/file upload service to actually receive files]</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
-
-        <p class="form-note">For time-critical situations, calling is faster than waiting on a form response.</p>
-
-        <div class="form-status" id="form-status"></div>
-      </form>
+        <p class="form-note">For time-critical situations, calling is faster than waiting on an email response.</p>
+      </div>
     </div>
   </div>
 </section>
