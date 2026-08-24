@@ -8,7 +8,7 @@ Search each file for the `.placeholder` CSS class / `[BRACKETED TEXT]` to find e
 - [x] Hours of operation - 9am - 5pm
 - [x] Base town/city + service radius - Cross Plains, IN, 30-mile radius (+$1/mile beyond)
 - [x] List of towns/counties covered - dropped; site just leads with base city + radius instead
-- [x] Facebook page - https://www.facebook.com/sightlinedronesolutions (linked from the header "Follow Us" button on all three pages)
+- [x] Facebook page - https://www.facebook.com/people/Sightline-Drone-Solutions/61593862822243/ (linked from the header "Follow Us" button on all three pages)
 
 ## Credentials
 - [x] Footer credential line - "Holds FAA Part 107" (no separate registration number given)
